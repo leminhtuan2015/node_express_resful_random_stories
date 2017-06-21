@@ -1,6 +1,6 @@
 index_controller = {
   index: function(req, res, next) {
-    res.render('index', { title: 'Express' });
+    res.render('index/index', { title: 'Express' });
   }
 }
 
