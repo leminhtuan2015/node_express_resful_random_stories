@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+/Users/admin/Documents/Server/mongodb-osx-x86_64-3.4.5/bin/mongod --dbpath ./database_mongo
+
+# Shell Mongodb
+# https://docs.mongodb.com/manual/reference/mongo-shell/#command-line-options
+
+# ./mongo
+# show dbs / show databases (show all database)
+# use test ( use database_name)
+# show collections (show all table)
+# db.media.find() (select * from media)
+
+# Nodejs + Mongo
+# http://mongoosejs.com/docs/

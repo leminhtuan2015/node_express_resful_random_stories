@@ -1,11 +1,20 @@
-var media = {
+var media_model = {
 	id: "",
-	title: ""
+	title: "",
+	content: ""
 }
 
-var MODEL_NAME = "Media"
+var TABLE_NAME = "media"
 var mongoose = require("mongoose")
 var media_schema = mongoose.Schema(media)
-var media_model = mongoose.model(MODEL_NAME, media_schema)
+var media = mongoose.model(TABLE_NAME, media_model)
+var db = mongoose.connection
 
-module.exports = media_model
+mongoose.connect('mongodb://localhost/test');
+
+db.on('error', console.error.bind(console, 'at filemedia.js >>>>>>> connection error:'));
+db.once('open', function() {
+	console.log("Mongo DB Connected successfull")
+});
+
+module.exports = media

@@ -1,5 +1,4 @@
-var short_story_controller = require('../controllers/short_story_controller');
-
+var short_story_controller = require('../controllers/short_story_controller')
 /* GET home page. */
 
 module.exports = function(router){
